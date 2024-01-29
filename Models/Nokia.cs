@@ -7,10 +7,17 @@ namespace DesafioPOO.Models
 
         }
 
+        //Implementação para o metodo InstalarAplicativo, q vai herdar de uma abstrata
         public override void InstalarAplicativo(string nomeApp)
         {
             Console.WriteLine($"Instalando o aplicativo {nomeApp}");
             Console.WriteLine($"{nomeApp} instalado com sucesso!");
+        }
+
+        public override void DesinstalarAplicativo(string nomeApp)
+        {
+            Console.WriteLine($"Desinstalando o aplicativo {nomeApp}");
+            Console.WriteLine($"{nomeApp} desinstalado com sucesso!");
         }
         // TODO: Sobrescrever o método "InstalarAplicativo"
     }
